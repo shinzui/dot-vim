@@ -11,7 +11,7 @@ pkg.install() {
     fs.link_file "$file"
   done
 
-  vim +PlugInstall
+  vim +PlugInstall +qall
 }
 
 install_vim_plug() {
@@ -33,7 +33,7 @@ install_vim_plug() {
 }
 
 pkg.push() {
-  vim +PlugSnapshot! "$PKG_PATH/vim_bundle.snapshot"
+  vim +PlugSnapshot! "$PKG_PATH/vim_bundle.snapshot" +qall
 
   git.push
 }
@@ -41,9 +41,9 @@ pkg.push() {
 pkg.pull() {
   git.pull
 
-  vim +PlugUpgrade
-  vim +PlugUpdate
-  vim +PlugClean!
+  vim +PlugUpgrade +qall
+  vim +PlugUpdate +qall
+  vim +PlugClean! +qall
 }
 
 pkg.installed() {
