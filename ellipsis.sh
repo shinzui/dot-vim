@@ -2,23 +2,59 @@
 #
 # shinzui/vim ellipsis package
 
-# The following hooks can be defined to customize behavior of your package:
-# pkg.install() {
-#     fs.link_files $PKG_PATH
-# }
+pkg.install() {
+  install_vim_plug
 
-# pkg.push() {
-#     git.push
-# }
+  readonly files=(vimrc vimrc.bundle)
 
-# pkg.pull() {
-#     git.pull
-# }
+  for file in "${files[@]}"; do
+    fs.link_file "$file"
+  done
 
-# pkg.installed() {
-#     git.status
-# }
-#
-# pkg.status() {
-#     git.diffstat
-# }
+  vim +PlugInstall
+}
+
+install_vim_plug() {
+  readonly vim_plug="$HOME/.vim/autoload/plug.vim"
+  readonly neovim_plug="$HOME/.config/neovim/autoload/plug.vim"
+
+
+  # Install vim-plug for vim
+  if ! fs.file_exits "$vim_plug"; then
+    curl -fLo "$vim_plug" --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  fi
+
+  # Install vim-plug for neovim
+  if ! fs.file_exits "$neovim_plug"; then
+    curl -fLo "$neovim_plug" --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  fi
+}
+
+pkg.push() {
+  vim +PlugSnapshot! "$PKG_PATH/vim_bundle.snapshot"
+
+  git.push
+}
+
+pkg.pull() {
+  git.pull
+
+  vim +PlugUpgrade
+  vim +PlugUpdate
+  vim +PlugClean!
+}
+
+pkg.installed() {
+  git.diffstat
+
+  #vim +PlugStatus
+}
+
+
+pkg.status() {
+  git.diffstat
+
+  #vim +PlugStatus
+}
