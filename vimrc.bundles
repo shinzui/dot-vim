@@ -56,6 +56,9 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 """Buffers
 Plug 'vits/ZoomWin'
 
+"""Registers
+Plug 'junegunn/vim-peekaboo'
+
 """web development
 
 "javascript
