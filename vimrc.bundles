@@ -24,6 +24,7 @@ Plug 'tpope/vim-endwise'
 """Writing
 
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 
 """color schemes
 

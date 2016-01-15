@@ -198,6 +198,20 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
+"Integrate limelight with goyo for writing
+autocmd! User GoyoEnter nested call <SID>goyo_enter() 
+autocmd! User GoyoLeave nested call <SID>goyo_leave() 
+
+function! s:goyo_enter()
+  colorscheme seoul256
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  Limelight!
+  colorscheme oceanicnext
+endfunction
+
 "Windows
 map <C-h> <C-w>h
 map <C-j> <C-w>j
