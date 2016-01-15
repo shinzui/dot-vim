@@ -253,6 +253,9 @@ let g:airline_theme='oceanicnext'
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
 
+"Goyo
+let g:goyo_width = 120
+
 "Unimpaired
 nmap <C-Up> [e
 nmap <C-Down> ]e
