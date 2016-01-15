@@ -21,6 +21,10 @@ Plug 'tpope/vim-rake', { 'for': 'ruby' }
 Plug 'tpope/gem-ctags', { 'for': 'ruby' }
 Plug 'tpope/vim-endwise'
 
+"""Writing
+
+Plug 'junegunn/goyo.vim'
+
 """color schemes
 
 Plug 'jonathanfilip/vim-lucius'
