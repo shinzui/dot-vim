@@ -199,8 +199,8 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 "Integrate limelight with goyo for writing
-autocmd! User GoyoEnter nested call <SID>goyo_enter() 
-autocmd! User GoyoLeave nested call <SID>goyo_leave() 
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 function! s:goyo_enter()
   colorscheme seoul256

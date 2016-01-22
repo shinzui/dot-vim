@@ -152,7 +152,16 @@ Plug 'unblevable/quick-scope'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'rking/ag.vim'
+
+"Multi file search
+"<leader> a to search, <leader s> to search for word under cursor
+"<leader> r multifile replace across files placed in quickfix list by previous
+"search, :Qargs puts current quickfix list files into the :args list
 Plug 'wincent/ferret'
+
+"enhanced search plugin
+"makes very magic the default 
+"<leader> n removes highlighting
 Plug 'wincent/loupe'
 
 """ Tmux integration
