@@ -4,7 +4,6 @@ set encoding=utf-8
 set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -34,9 +33,6 @@ set ignorecase
 set smartcase
 set gdefault
 
-" Set temp directory for swp/tmp files
-set directory=/tmp/
-
 " Enable tab completion. First tab shows all matches, second tab cycles through them
 set wildmenu
 set wildmode=list:longest,full
@@ -56,8 +52,6 @@ set wildignore+=public/uploads/**
 set wildignore+=doc/yard/**,.yardoc/**
 set wildignore+=log/**
 set wildignore+=tmp/**
-
-set nowrap
 
 filetype on
 filetype indent on
@@ -102,12 +96,6 @@ if &term =~ '256color'
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
-
-"configure Kolor scheme
-let g:kolor_italic=1                    " Enable italic. Default: 1
-let g:kolor_bold=1                      " Enable bold. Default: 1
-let g:kolor_underlined=0                " Enable underline for 'Underlined'. Default: 0
-let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
 
 "disable beep
 set vb t_vb=
@@ -175,7 +163,6 @@ autocmd BufNewFile,BufRead {Rakefile,Gemfile,Thorfile,Vagrantfile} set filetype=
 autocmd BufNewFile,BufRead config.ru  set filetype=ruby
 autocmd BufNewFile,Bufread *.{md,markdown,mdown,mkd,mkdn} set filetype=markdown
 autocmd BufNewFile,Bufread *.yml.example set filetype=yaml
-" autocmd BufNewFile,BufRead *.json  set filetype=javascript
 
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
 autocmd BufNewFile,BufRead ~/.bash/* setfiletype sh
