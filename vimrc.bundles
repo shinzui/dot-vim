@@ -36,11 +36,6 @@ Plug 'mhartington/oceanic-next'
 "Utility to generate color scheme for tmux
 Plug 'edkolev/tmuxline.vim'
 
-"""Documentation
-
-Plug 'rizzatti/dash.vim'
-Plug 'rizzatti/funcoo.vim'
-
 """Status line
 Plug 'bling/vim-airline'
 
