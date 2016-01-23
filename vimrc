@@ -179,7 +179,6 @@ autocmd BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
  " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 " autocmd bufwritepost *.js silent !standard % --format
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
@@ -188,6 +187,12 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 "Integrate limelight with goyo for writing
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+augroup filetype_javascript
+  autocmd!
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType javascript RainbowParentheses
+augroup END
 
 function! s:goyo_enter()
   colorscheme seoul256
@@ -311,6 +316,9 @@ let g:vimfiler_marked_file_icon = '✓'
 
 "disable netrw
 let g:loaded_netrwPlugin = 1
+
+"""rainbow parentheses
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 """vim-multiple-cursors
 

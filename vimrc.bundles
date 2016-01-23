@@ -90,6 +90,7 @@ Plug 'mustache/vim-mustache-handlebars'
 """Utilities
 
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'junegunn/rainbow_parentheses.vim'
 
 "Syntax checker
 Plug 'scrooloose/syntastic'
