@@ -340,6 +340,9 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplete#manual_completion_start_length = 0
+let g:neocomplete#auto_completion_start_length = 2
+let g:neocomplete#enable_fuzzy_completion = 1
 
 let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'default' : '',
@@ -352,6 +355,9 @@ if !exists('g:neocomplete#keyword_patterns')
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
+
+call neocomplete#custom#source('neosnippet', 'min_pattern_length', 1)
+
 "UtilSnips
 " let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -361,9 +367,9 @@ let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
 " Enable neosnippet snipmate compatibility mode
 let g:neosnippet#enable_snipmate_compatibility = 1
-imap <C-s>     <Plug>(neosnippet_expand_or_jump)
-smap <C-s>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-s>     <Plug>(neosnippet_expand_target)
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " SuperTab like snippets behavior.
 " imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
@@ -388,7 +394,9 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 
 " Use honza's snippets.
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/plugged/vim-snippets/snippets'
+
+call neocomplete#custom#source('neosnippet', 'rank', 400)
 
 " For snippet_complete marker.
 if has('conceal')

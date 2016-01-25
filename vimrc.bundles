@@ -2,10 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 """snippets and completion
 
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/neosnippet.vim'
-Plug 'Shougo/neosnippet-snippets'
-Plug 'honza/vim-snippets'
+Plug 'Shougo/neocomplete.vim' | Plug 'Shougo/neosnippet.vim' | Plug 'Shougo/neosnippet-snippets' | Plug 'honza/vim-snippets'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 
@@ -156,7 +153,7 @@ Plug 'rking/ag.vim'
 Plug 'wincent/ferret'
 
 "enhanced search plugin
-"makes very magic the default 
+"makes very magic the default
 "<leader> n removes highlighting
 Plug 'wincent/loupe'
 
