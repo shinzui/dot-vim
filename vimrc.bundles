@@ -172,6 +172,7 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/unite-outline'
 Plug 'Shougo/unite-help'
 Plug 'tsukkee/unite-tag'
+Plug 'moznion/unite-git-conflict.vim'
 Plug 'junkblocker/unite-codesearch'
 Plug 'Shougo/junkfile.vim'
 Plug 'Shougo/vimproc', { 'do': 'make' }
