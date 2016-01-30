@@ -297,6 +297,12 @@ nmap k <Plug>(accelerated_jk_gk)
 "undotree
 let g:undotree_WindowLayout = 2
 
+"emmet
+let g:user_emmet_settings = {
+   \ 'html': {
+   \ 'quote_char': "'"
+   \} }
+
 "vimfiler
 let g:vimfiler_as_default_explorer = 1
 call vimfiler#custom#profile('default', 'context', {
