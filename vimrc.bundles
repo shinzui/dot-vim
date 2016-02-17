@@ -129,6 +129,12 @@ Plug 'terryma/vim-expand-region'
 "undo
 Plug 'mbbill/undotree'
 
+"Hashicorp
+
+"Adds :Terraform command to run terraform. Also sets up *.tf, *.tfvars, and
+"*.tfstate files to be highlighted
+Plug 'hashivim/vim-terraform', { 'for': ['terraform'] }
+
 "auto match and insert pairs
 " Plug 'jiangmiao/auto-pairs'
 
