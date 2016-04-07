@@ -89,6 +89,9 @@ Plug 'mustache/vim-mustache-handlebars'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'junegunn/rainbow_parentheses.vim'
 
+"Folding
+Plug 'Konfekt/FastFold'
+
 "Syntax checker
 Plug 'scrooloose/syntastic'
 
