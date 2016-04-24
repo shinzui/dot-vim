@@ -117,7 +117,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/matchit.zip'
 
 "aligning
-Plug 'godlygeek/tabular'
+Plug 'junegunn/vim-easy-align'
 
 "vim text objects
 Plug 'kana/vim-textobj-user'
