@@ -39,8 +39,8 @@ Plug 'bling/vim-airline'
 """Git & Github
 
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'gregsexton/gitv'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
