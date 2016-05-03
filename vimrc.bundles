@@ -48,6 +48,10 @@ Plug 'mattn/gist-vim'
 "change root dir based on .git
 Plug 'airblade/vim-rooter'
 
+
+"markdown
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+
 "pasting and clipboard
 Plug 'ConradIrwin/vim-bracketed-paste'
 
