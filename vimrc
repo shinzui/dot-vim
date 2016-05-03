@@ -248,6 +248,16 @@ map <C-\> :tnext<CR>
 "Goyo
 let g:goyo_width = 120
 
+"Pencil
+let g:pencil#textwidth = 120
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+
 "Unimpaired
 nmap <C-Up> [e
 nmap <C-Down> ]e
