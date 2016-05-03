@@ -196,11 +196,13 @@ augroup END
 
 function! s:goyo_enter()
   colorscheme seoul256
+  silent !tmux set status off
   Limelight
 endfunction
 
 function! s:goyo_leave()
   Limelight!
+  silent !tmux set status on
   colorscheme oceanicnext
 endfunction
 
