@@ -352,10 +352,13 @@ function! Multiple_cursors_after()
     echo 'Enabled autocomplete'
 endfunction
 
+"vim-emoji
+set completefunc=emoji#complete
+
 "Neocomplete
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_cursor_hold_i = 1
-let g:neocomplete#cursor_hold_i_time = 500
+let g:neocomplete#cursor_hold_i_time = 300
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3

@@ -139,6 +139,9 @@ Plug 'terryma/vim-expand-region'
 "undo
 Plug 'mbbill/undotree'
 
+"emoji
+Plug 'junegunn/vim-emoji'
+
 "Hashicorp
 
 "Adds :Terraform command to run terraform. Also sets up *.tf, *.tfvars, and
