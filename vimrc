@@ -88,8 +88,10 @@ set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 
 "default color scheme
 set t_Co=256
-colorscheme oceanicnext
 set background=dark
+set t_ut=
+
+colorscheme nova
 
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
@@ -203,7 +205,7 @@ endfunction
 function! s:goyo_leave()
   Limelight!
   silent !tmux set status on
-  colorscheme oceanicnext
+  colorscheme nova
 endfunction
 
 "Windows
@@ -241,7 +243,7 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 "vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='oceanicnext'
+let g:airline_theme='nova'
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -285,6 +287,10 @@ let g:tagbar_type_javascript = {
 
 "syntastic
 let g:syntastic_javascript_checkers = ['eslint']
+
+"neomake
+"let g:neomake_javascript_enabled_makers = ['eslint']
+" autocmd! BufWritePost * Neomake
 
 "rainbow parentheses
 " augroup rainbow_javascript

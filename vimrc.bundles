@@ -102,6 +102,8 @@ Plug 'Konfekt/FastFold'
 
 "Syntax checker
 Plug 'scrooloose/syntastic'
+" Plug 'neomake/neomake'
+" Plug 'benjie/neomake-local-eslint.vim'
 
 "Syntax highlighting
 Plug 'vim-scripts/nginx.vim'
