@@ -92,6 +92,9 @@ Plug 'groenewege/vim-less'
 "handlebars
 Plug 'mustache/vim-mustache-handlebars'
 
+"TOML
+Plug 'cespare/vim-toml'
+
 """Utilities
 
 Plug 'nathanaelkane/vim-indent-guides'
