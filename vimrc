@@ -285,8 +285,10 @@ let g:tagbar_type_javascript = {
     \ 'ctagsbin' : '/usr/local/bin/jsctags'
     \ }
 
-"syntastic
-let g:syntastic_javascript_checkers = ['eslint']
+"ale
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0
 
 "neomake
 "let g:neomake_javascript_enabled_makers = ['eslint']
