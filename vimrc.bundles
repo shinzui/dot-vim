@@ -106,6 +106,9 @@ Plug 'Konfekt/FastFold'
 "Syntax checker
 Plug 'w0rp/ale'
 
+"Formatting
+Plug 'sbdchd/neoformat'
+
 "Syntax highlighting
 Plug 'vim-scripts/nginx.vim'
 

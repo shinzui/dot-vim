@@ -360,6 +360,11 @@ function! Multiple_cursors_after()
     echo 'Enabled autocomplete'
 endfunction
 
+"""neoformat
+autocmd BufWritePre *.js Neoformat
+autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --print-width\ 120\ --no-semi\ --trailing-comma\ es5
+let g:neoformat_try_formatprg = 1
+
 "vim-emoji
 set completefunc=emoji#complete
 
