@@ -187,6 +187,9 @@ Plug 'benmills/vimux'
 """ Better terminal integration
 Plug 'wincent/terminus'
 
+"""Interactive scratchpad
+Plug 'metakirby5/codi.vim'
+
 """ Database
 Plug 'vim-scripts/dbext.vim'
 
