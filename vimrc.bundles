@@ -73,15 +73,13 @@ Plug 'othree/es.next.syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'marijnh/tern_for_vim'
 Plug 'elzr/vim-json'
+Plug 'gutenye/json5.vim'
 
 "react
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 "graphql
 Plug 'jparise/vim-graphql', { 'for': ['javascript', 'javascript.jsx'] }
-
-"coffeescript
-Plug 'kchmck/vim-coffee-script'
 
 "sass support
 Plug 'cakebaker/scss-syntax.vim'
@@ -91,6 +89,9 @@ Plug 'groenewege/vim-less'
 
 "handlebars
 Plug 'mustache/vim-mustache-handlebars'
+
+"mjml
+Plug 'amadeus/vim-mjml'
 
 "TOML
 Plug 'cespare/vim-toml'
