@@ -194,6 +194,9 @@ Plug 'wincent/terminus'
 """Interactive scratchpad
 Plug 'metakirby5/codi.vim'
 
+"""Narrow region
+Plug 'chrisbra/NrrwRgn'
+
 """ Database
 Plug 'vim-scripts/dbext.vim'
 
