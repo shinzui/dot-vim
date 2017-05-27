@@ -75,8 +75,12 @@ Plug 'othree/javascript-libraries-syntax.vim', { 'for': ['javascript', 'javascri
 Plug 'elzr/vim-json'
 Plug 'gutenye/json5.vim'
 
+"css
+Plug 'hail2u/vim-css3-syntax'
+
 "react
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'fleischie/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
 
 "graphql
 Plug 'jparise/vim-graphql', { 'for': ['javascript', 'javascript.jsx'] }
