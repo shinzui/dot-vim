@@ -325,9 +325,7 @@ let g:user_emmet_settings = {
 
 "vimfiler
 let g:vimfiler_as_default_explorer = 1
-call vimfiler#custom#profile('default', 'context', {
-    \   'safe' : 0
-    \ })
+let g:vimfiler_safe_mode_by_default = 0
 
 let g:vimfiler_quick_look_command = 'qlmanage -p'
 nnoremap <silent> <Leader>E  :VimFiler <CR>
