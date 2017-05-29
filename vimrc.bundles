@@ -140,7 +140,9 @@ Plug 'junegunn/vim-easy-align'
 
 "vim text objects
 Plug 'kana/vim-textobj-user'
-Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby'] }
+Plug 'kana/vim-textobj-function'
+Plug 'thinca/vim-textobj-function-javascript'
 
 "refactoring
 Plug 'terryma/vim-multiple-cursors'
