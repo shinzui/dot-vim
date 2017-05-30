@@ -32,8 +32,6 @@ Plug 'junegunn/seoul256.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'trevordmiller/nova-vim'
 
-"Utility to generate color scheme for tmux
-Plug 'edkolev/tmuxline.vim'
 
 """Status line
 Plug 'bling/vim-airline'
@@ -194,6 +192,8 @@ Plug 'wincent/loupe'
 """ Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
+"Utility to generate color scheme for tmux
+Plug 'edkolev/tmuxline.vim'
 
 """ Better terminal integration
 Plug 'wincent/terminus'
