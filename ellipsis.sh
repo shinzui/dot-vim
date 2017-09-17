@@ -3,6 +3,7 @@
 # shinzui/vim ellipsis package
 
 pkg.install() {
+  brew install vim --with-lua --with-override-system-vi 
   install_vim_plug
 
   readonly files=(vimrc vimrc.bundle)
