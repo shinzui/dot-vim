@@ -98,6 +98,9 @@ Plug 'amadeus/vim-mjml'
 "TOML
 Plug 'cespare/vim-toml'
 
+"Protocol Buffers
+Plug 'uarun/vim-protobuf'
+
 """Utilities
 
 Plug 'nathanaelkane/vim-indent-guides'
