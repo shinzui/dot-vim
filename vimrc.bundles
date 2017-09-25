@@ -81,7 +81,7 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'fleischie/vim-styled-components', { 'for': ['javascript', 'javascript.jsx'] }
 
 "graphql
-Plug 'jparise/vim-graphql', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'jparise/vim-graphql', { 'for': ['graphql'] }
 
 "sass support
 Plug 'cakebaker/scss-syntax.vim'
