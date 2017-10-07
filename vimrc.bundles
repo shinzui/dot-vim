@@ -41,6 +41,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'lambdalisue/gina.vim'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
