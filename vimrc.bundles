@@ -60,7 +60,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'vits/ZoomWin'
 
 """Registers
-Plug 'junegunn/vim-peekaboo'
+"Plug 'junegunn/vim-peekaboo'
 
 """web development
 
