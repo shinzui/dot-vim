@@ -193,6 +193,10 @@ Plug 'wincent/ferret'
 "<leader> n removes highlighting
 Plug 'wincent/loupe'
 
+"En Masse
+"Allows you to edit multiple file based on the quicklist using :EnMasse
+Plug 'Olical/vim-enmasse'
+
 """ Tmux integration
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
