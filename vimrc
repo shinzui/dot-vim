@@ -213,6 +213,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"Choose window
+nmap \ <Plug>(choosewin)
+
 "ruby specific
 " bind control-l to hashrocket
 imap <C-l> =><Space>

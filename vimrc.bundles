@@ -59,6 +59,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 
 """Buffers
 Plug 'vits/ZoomWin'
+Plug 't9md/vim-choosewin'
 
 """Registers
 "Plug 'junegunn/vim-peekaboo'
