@@ -168,9 +168,6 @@ Plug 'hashivim/vim-terraform', { 'for': ['terraform'] }
 "auto match and insert pairs
 " Plug 'jiangmiao/auto-pairs'
 
-"Parentheses
-" Plug 'junegunn/rainbow_parentheses.vim'
-
 "Scrolling & movement
 Plug 'terryma/vim-smooth-scroll'
 Plug 'rhysd/accelerated-jk'
