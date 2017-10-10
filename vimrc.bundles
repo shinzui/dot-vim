@@ -10,6 +10,9 @@ Plug 'othree/html5.vim'
 
 Plug 'Shougo/vimfiler.vim'
 
+""" Start screen
+Plug 'mhinz/vim-startify'
+
 """ruby
 
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
@@ -160,6 +163,9 @@ Plug 'mbbill/undotree'
 "emoji
 Plug 'junegunn/vim-emoji'
 
+"vim-hardtime
+Plug 'takac/vim-hardtime'
+
 "Hashicorp
 
 "Adds :Terraform command to run terraform. Also sets up *.tf, *.tfvars, and
@@ -209,6 +215,9 @@ Plug 'metakirby5/codi.vim'
 
 """Narrow region
 Plug 'chrisbra/NrrwRgn'
+
+"""display indention levels
+Plug 'Yggdroot/indentLine'
 
 """ Database
 Plug 'vim-scripts/dbext.vim'
