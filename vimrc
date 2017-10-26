@@ -362,7 +362,9 @@ endfunction
 
 """neoformat
 autocmd BufWritePre *.js Neoformat
-autocmd FileType javascript set formatprg=prettier\ --stdin\ --single-quote\ --print-width\ 120\ --no-semi\ --trailing-comma\ es5
+autocmd BufWritePre *.jsx Neoformat
+autocmd filetype javascript set formatprg=prettier\ --stdin\ --single-quote\ --print-width\ 100\ --no-semi\ --trailing-comma\ es5
+autocmd filetype javascript.jsx set formatprg=prettier\ --stdin\ --single-quote\ --print-width\ 100\ --no-semi\ --trailing-comma\ es5
 let g:neoformat_try_formatprg = 1
 
 "vim-emoji
