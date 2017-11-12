@@ -91,7 +91,7 @@ set t_Co=256
 set background=dark
 set t_ut=
 
-colorscheme nova
+colorscheme iceberg
 
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes

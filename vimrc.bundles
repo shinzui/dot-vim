@@ -34,6 +34,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'trevordmiller/nova-vim'
+Plug 'cocopon/iceberg.vim'
 
 
 """Status line
