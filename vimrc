@@ -1,4 +1,5 @@
 scriptencoding utf-8
+
 set encoding=utf-8
 
 set nocompatible
@@ -88,7 +89,8 @@ set titlestring=VIM:\ %-25.55F\ %a%r%m titlelen=70
 
 "default color scheme
 set t_Co=256
-set background=dark
+" set background=dark
+set termguicolors
 set t_ut=
 
 colorscheme iceberg
@@ -204,7 +206,7 @@ endfunction
 function! s:goyo_leave()
   Limelight!
   silent !tmux set status on
-  colorscheme nova
+  colorscheme iceberg
 endfunction
 
 "Windows
@@ -245,7 +247,7 @@ cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 
 "vim-airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='nova'
+let g:airline_theme='iceberg'
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
