@@ -17,18 +17,10 @@ pkg.install() {
 
 install_vim_plug() {
   readonly vim_plug="$HOME/.vim/autoload/plug.vim"
-  readonly neovim_plug="$HOME/.config/neovim/autoload/plug.vim"
-
 
   # Install vim-plug for vim
-  if ! fs.file_exits "$vim_plug"; then
+  if ! fs.file_exists "$vim_plug"; then
     curl -fLo "$vim_plug" --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  fi
-
-  # Install vim-plug for neovim
-  if ! fs.file_exits "$neovim_plug"; then
-    curl -fLo "$neovim_plug" --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   fi
 }
